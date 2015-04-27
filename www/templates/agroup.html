@@ -1,0 +1,33 @@
+<ion-view title="A Group" ng-controller="aGroupCtrl">
+    <ion-content class="has-header">
+        <div class="row">
+            <div class="col">
+                <label class="item item-radio">
+                    <input type="radio" ng-model="aGroup"  name="A+ve" value="A+ve"  ng-change='changedValue(aGroup)'>
+                    <div class="item-content">
+                        A +ve
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+            </div>
+            <div class="col">
+                <label class="item item-radio">
+                    <input type="radio" ng-model="aGroup" name="A-ve" value="A-ve" ng-change='changedValue(aGroup)'>
+                    <div class="item-content">
+                        A -ve
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+            </div>
+        </div>
+         <ion-list >
+            <ion-item ng-repeat="itm in tempAGroupList " type="item-text-wrap">
+                    <div style="display:inline-block;vertical-align:top;">
+                        {{itm.firstName }}
+                        <p>{{itm.address}}</p>
+                    </div>
+                    <i style="float:right" class="button button-icon ion-ios7-close custom-icon-red" style="font-size:30px;font-color:blue;" ng-click="onItemDelete($event,item,item.wishItem.id)"></i>
+               </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

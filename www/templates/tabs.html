@@ -1,24 +1,40 @@
-<!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
-navigation history that also transitions its views in and out.
--->
-<ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
-  <!-- Dashboard Tab -->
-  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab>
+<ion-side-menus ng-controller="headerCtrl">
+    <!-- arabic css -->
+ 
+   <ion-pane  ion-side-menu-content>
+        <ion-nav-bar type="bar-positive" class="menubgnd" back-button-type="button-icon" back-button-icon="ion-ios7-arrow-back">
+            <ion-nav-buttons side="left">
+                <div class="buttons right-buttons">
+                    <button class="button button-icon icon ion-navicon-round" ng-click="toggleMenu()">
+                    </button>
+                </div>
+            </ion-nav-buttons>
+           
 
-  <!-- Chats Tab -->
-  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
-    <ion-nav-view name="tab-chats"></ion-nav-view>
-  </ion-tab>
+        </ion-nav-bar>
+        <ion-nav-view name="tab"></ion-nav-view>
+    </ion-pane>
 
-  <!-- Account Tab -->
-  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
-  </ion-tab>
+    <!-- left side menu english-->
+    <ion-side-menu side="left" >
+        <ion-content has-header="true" id="sideMenu">
+            <ul class="list">
+                <img style="display: block;margin-left: auto;margin-right: auto; cursor: pointer;" src="img/logo1.jpg" ui-sref="tab.welcome" ng-click="toggleMenu()" />
+                <a ui-sref="tab.welcome" class="item" ng-click="toggleMenu()"> Home</a>
+                <a ui-sref="tab.agroup" class="item" ng-click="toggleMenu()"></i> A</a>
+                <a ui-sref="tab.wishlist" class="item" ng-click="toggleMenu()"> B</a>
+                <a ui-sref="tab.orderedlist({purchaseId: null, orgin: null})" class="item" ng-click="toggleMenu()">AB</a>
+                <a ui-sref="tab.purchasehistory" class="item" ng-click="toggleMenu()">O</a>
+                
+                <a ui-sref="tab.aboutus" class="item" ng-click="toggleMenu()"> About Us</a>
+
+            </ul>
+        </ion-content>
+    </ion-side-menu>
+    <!-- left side menu arabic-->
+  
 
 
-</ion-tabs>
+</ion-side-menus>
+
