@@ -1,8 +1,6 @@
-
 <ion-side-menus ng-controller="headerCtrl">
     <!-- arabic css -->
- 
-   <ion-pane  ion-side-menu-content>
+    <ion-pane ion-side-menu-content>
         <ion-nav-bar type="bar-positive" class="menubgnd" back-button-type="button-icon" back-button-icon="ion-ios7-arrow-back">
             <ion-nav-buttons side="left">
                 <div class="buttons right-buttons">
@@ -10,31 +8,22 @@
                     </button>
                 </div>
             </ion-nav-buttons>
-           
-
         </ion-nav-bar>
         <ion-nav-view name="tab"></ion-nav-view>
     </ion-pane>
-
     <!-- left side menu english-->
-    <ion-side-menu side="left" >
+    <ion-side-menu side="left">
         <ion-content has-header="true" id="sideMenu">
             <ul class="list">
                 <img style="display: block;margin-left: auto;margin-right: auto; cursor: pointer;" src="img/logo1.jpg" ui-sref="tab.welcome" ng-click="toggleMenu()" />
                 <a ui-sref="tab.welcome" class="item" ng-click="toggleMenu()"> Home</a>
                 <a ui-sref="tab.agroup" class="item" ng-click="toggleMenu()"></i> A</a>
-                <a ui-sref="tab.wishlist" class="item" ng-click="toggleMenu()"> B</a>
-                <a ui-sref="tab.orderedlist({purchaseId: null, orgin: null})" class="item" ng-click="toggleMenu()">AB</a>
-                <a ui-sref="tab.purchasehistory" class="item" ng-click="toggleMenu()">O</a>
-                
+                <a ui-sref="tab.bgroup" class="item" ng-click="toggleMenu()"> B</a>
+                <a ui-sref="tab.abgroup" class="item" ng-click="toggleMenu()">AB</a>
+                <a ui-sref="tab.ogroup" class="item" ng-click="toggleMenu()">O</a>
                 <a ui-sref="tab.aboutus" class="item" ng-click="toggleMenu()"> About Us</a>
-
             </ul>
+            </ion-contenogroupde-menu>
         </ion-content>
     </ion-side-menu>
-    <!-- left side menu arabic-->
-  
-
-
 </ion-side-menus>
-

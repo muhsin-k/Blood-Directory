@@ -1,1 +1,182 @@
 /* Empty. Add your own CSS if you like */
+.menubgnd {
+  background: #ffd800;
+  color: white; }
+
+button.button-icon {
+  background: #ffd800;
+  color: white; }
+
+/*div.right-buttons{
+    color: white !important;
+}*/
+.bar .title {
+  color: #776F63; }
+
+a.item-content, .item {
+  background: transparent !important; }
+
+div.list {
+  /*background-image: url("http://forwardministries.org/wp-content/uploads/2014/02/wood-background-tumblrglam-themescom-girly-tumblr-themes-backgrounds-fonts-wood-pvut6wuw.jpg") !important;*/
+  background: transparent; }
+
+p.ng-binding {
+  color: #B6A48E !important; }
+
+ion-item.item {
+  border: none !important; }
+
+ion-content.scroll-content {
+  background-image: url("../img/bkgnd.jpg") !important; }
+
+#sideMenu {
+  background: #EEEBDD !important; }
+
+a.item {
+  border-color: #5d5850 !important; }
+
+div.ng-binding {
+  color: white !important; }
+
+.imgrnd {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background: #505050;
+  border-radius: 50%;
+  display: inline-block;
+  padding-top: 7px;
+  color: white; }
+
+.imgrndwish {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background: #505050;
+  border-radius: 50%;
+  display: inline-block;
+  padding-top: 7px;
+  color: #ffd800; }
+
+.tab-item .icon {
+  font-size: 17px; }
+
+h3.ng-binding {
+  color: white !important; }
+
+h3.popup-title {
+  color: black !important; }
+
+div.input-label {
+  color: white !important; }
+
+ion-item.ng-binding {
+  color: white !important; }
+
+.input-label {
+  color: #B6A48E; }
+
+.ion-ios7-close {
+  font-size: 40px !important;
+  color: #CC0000 !important; }
+
+div.bar-footer {
+  background: #EEEBDD !important; }
+
+label.item {
+  color: white !important; }
+
+input.textclr {
+  color: white !important; }
+
+.button.button-royal {
+  background-color: rgba(69, 85, 97, 0.71);
+  border-color: #ffd800 !important; }
+
+.button.button-royal.activated {
+  background-color: rgba(125, 145, 160, 0.91); }
+
+.item.item-stable {
+  color: white; }
+
+.ribbonEn {
+  font-weight: bold;
+  text-align: center;
+  width: 5em;
+  height: 3em;
+  background-image: url("../img/high.png");
+  background-size: 5em 3em;
+  color: white;
+  position: absolute;
+  left: 10em;
+  top: 4em; }
+  .ribbonEn p {
+    top: 3em;
+    color: white; }
+
+.ribbonAr {
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  width: 5em;
+  height: 3em;
+  background-image: url("../img/high.png");
+  background-size: 5em 3em;
+  color: white;
+  position: absolute;
+  right: 13em;
+  top: 4em; }
+  .ribbonAr p {
+    top: 3em;
+    color: white; }
+
+.ribbonDetEn {
+  font-weight: bold;
+  text-align: center;
+  width: 5em;
+  height: 3em;
+  background-image: url("../img/high.png");
+  background-size: 5em 3em;
+  color: white;
+  position: absolute;
+  left: 0em;
+  top: 0em; }
+  .ribbonDetEn p {
+    top: 3em;
+    color: white; }
+
+.fbLoginBtn {
+  width: 12em;
+  height: 3em;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fbLogoutBtn {
+  width: 12em;
+  height: 3em;
+  cursor: pointer; }
+
+@media (min-width: 0px) and (max-width: 241px) {
+  .myImg {
+    width: 10em;
+    height: 7em; } }
+@media (min-width: 242px) and (max-width: 320px) {
+  .myImg {
+    width: 14em;
+    height: 10em; } }
+@media (min-width: 321px) and (max-width: 480px) {
+  .myImg {
+    width: 19em;
+    height: 15em; } }
+@media (min-width: 481px) and (max-width: 600px) {
+  .myImg {
+    width: 26em;
+    height: 20em; } }
+@media (min-width: 600px) and (max-width: 1500px) {
+  .myImg {
+    width: 27em;
+    height: 21em; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,29 +1,29 @@
-<ion-view title="A Group" ng-controller="aGroupCtrl">
+<ion-view title="B Group" ng-controller="bGroupCtrl">
     <ion-content class="has-header">
         <div class="row">
             <div class="col">
                 <label class="item item-radio">
-                    <input type="radio" ng-model="aGroup" name="A+ve" value="A+ve" ng-change='changedValue(aGroup)'>
-                    <div class="item-content" style="color:black">
-                        A +ve
+                    <input type="radio" ng-model="bGroup" name="B+ve" value="B+ve" ng-change='changedValue(bGroup)'>
+                    <div class="item-content" style="color:black"></i>
+                        B +ve
                     </div>
                     <i class="radio-icon ion-checkmark" style="color:black"></i>
                 </label>
             </div>
             <div class="col">
                 <label class="item item-radio">
-                    <input type="radio" ng-model="aGroup" name="A-ve" value="A-ve" ng-change='changedValue(aGroup)'>
-                    <div class="item-content" style="color:black">
-                        A -ve
+                    <input type="radio" ng-model="bGroup" name="B-ve" value="B-ve" ng-change='changedValue(bGroup)'>
+                    <div class="item-content" style="color:black"></i>
+                        B -ve
                     </div>
                     <i class="radio-icon ion-checkmark" style="color:black"></i>
                 </label>
             </div>
         </div>
         <ion-list>
-            <ion-item ng-repeat="itm in tempAGroupList " type="item-text-wrap">
+            <ion-item ng-repeat="itm in tempBGroupList " type="item-text-wrap">
                 <div style="display:inline-block;vertical-align:top;">
-                    {{itm.name}}
+                 {{itm.name}}
                     <p>{{itm.address}}</p>
                     <p>{{itm.mobno}}</p>
                 </div>
