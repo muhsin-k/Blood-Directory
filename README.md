@@ -21,6 +21,17 @@ https://spreadsheets.google.com/feeds/list/{{key}}/od6/public/basic?hl=en_US&alt
 
 Note the key in URL, can be replaced to your OWN Google Doc key. 
 
+How to access JSON data in your application,
+
+return $http({
+
+    method: 'GET',
+    
+    url: 'https://spreadsheets.google.com/feeds/list/{{key}}/od6/public/basic?hl=en_US&alt=json'
+
+});
+        
+
 The end result will be a JSON you can use in your application, pretty neat. As long as you include the URL in your application, you can access the data. The downside is you need to publish the spreadsheet as public data. But the advantage of leverage this out weight by the downside by a big margin. You can update the data in the spreadsheet any time you want and your application uses this data will be reflected the data instantly. (Update: Google documentation on this feature)
 
 To build, install cordova, then run:
@@ -35,4 +46,4 @@ Substitute android for ios above to test on Apple.
 
 
 
-Created by @Muhsin for the Ionic Framework
+Created by @Muhsin
