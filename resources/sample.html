@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular starter</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <a href="#/">Main</a>
+    <a href="#aboutus">About Us</a>
+    <a href="#career">Career</a>
+    <a href="#contact">Contact</a>
+    <div ng-view></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="app.js"></script>
+</body>
+<script type="text/javascript">
+var app = angular.module('myApp', ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl: "main.html"
+        })
+        .when("/aboutus", {
+            templateUrl: "aboutus.html"
+        })
+        .when("/career", {
+            templateUrl: "career.html"
+        })
+        .when("/contact", {
+            templateUrl: "contact.html"
+        });
+});
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+app.controller('validateCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+
+</html>
